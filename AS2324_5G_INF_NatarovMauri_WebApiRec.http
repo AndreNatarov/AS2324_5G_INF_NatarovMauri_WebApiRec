@@ -1,0 +1,6 @@
+@AS2324_5G_INF_NatarovMauri_WebApiRec_HostAddress = http://localhost:5155
+
+GET {{AS2324_5G_INF_NatarovMauri_WebApiRec_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
