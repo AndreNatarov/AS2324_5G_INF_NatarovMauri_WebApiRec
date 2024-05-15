@@ -15,8 +15,16 @@ namespace AS2324_5G_INF_NatarovMauri_WebApiRec.Controllers
                 return Json(new
                 {
                     risultato = Math.PI*raggio*raggio*altezza,
-                    message = "",
+                    message = "Calcolo del volume del cilindro eseguito",
                     status = "OK"
+                });
+            }
+            else
+            {
+                return Json(new
+                {
+                    message = "Errore, valori inferiori al zero",
+                    status = "KO"
                 });
             }
             
