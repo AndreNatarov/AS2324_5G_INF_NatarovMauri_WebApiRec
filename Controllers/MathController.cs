@@ -5,6 +5,11 @@ namespace AS2324_5G_INF_NatarovMauri_WebApiRec.Controllers
     public class MathController : Controller
     {
         //API per conversione da Celsius a Fahrenheit
+        [HttpGet("GetCelsiusAFahrenheit")]
+        public JsonResult GetCelsiusAFahrenheit(double tempCelsius)
+        {
+
+        }
 
         //API calcolo volume cilindro
         [HttpGet("GetVolumeCilindro")]
