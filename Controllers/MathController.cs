@@ -8,7 +8,13 @@ namespace AS2324_5G_INF_NatarovMauri_WebApiRec.Controllers
         [HttpGet("GetCelsiusAFahrenheit")]
         public JsonResult GetCelsiusAFahrenheit(double tempCelsius)
         {
-
+            return Json(new
+            {
+                temperaturaInCelius = tempCelsius + "°C",
+                risultato = tempCelsius*9/5+32 + "°F",
+                message = "Conversione eseguita",
+                status = "OK"
+            });
         }
 
         //API calcolo volume cilindro
